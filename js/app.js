@@ -1,12 +1,12 @@
 /* Create cat object */
 
-/* Create event listener to use textContent to replace cat name text box into 'your cat' */
-
+/* Event listener to replace 'your cat' with text box entry */
 
   let button = document.querySelector('#addName');
-  let text = document.querySelector('#catName');
+
   button.addEventListener('click', function() {
-    document.querySelector(".yourCat").textContent = "WHAT HERE"; // how do I pull text from box to replace??
+    let text = document.getElementById('catName').value;
+    document.querySelector(".yourCat").textContent = text;
     console.log('clicked');
   }, false);
 
