@@ -1,17 +1,27 @@
 <html>
 <head>
     <title>Cat Clicker!</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-<body>
-    <h1>Lab: Cat Clicker</h1>
 
-    <h2>Click a Cat</h2>
+<body>
+    <header>Lab: Cat Clicker</header>
+
+    <p class="intro">Congratulations, you've just returned from the local animal shelter with a brand new kitten! This little ball of fluff requires plenty of love and attention. Give it a name and show it some affection. Before you know it, your tiny kitten will be an adult!</p>
+
     <h2>What is your cat's name?</h2>
     <input type="text" id="catName">
+    <button id="addName">Name my cat!</button>
+    <p>
+    <img id="carrierPic" src="img/crate.jpg" alt="Cute cat photo you can't help but click" style="width:250px;">
+    <p>
+    <h2>Click the picture to pet <span class='yourCat'>your cat</span></h2>
+
+    <!-- <button type="button" id="catClick">Click to pet your cat!</button> -->
 
     <script src="js/app.js"></script>
 </body>
+
 </html>
