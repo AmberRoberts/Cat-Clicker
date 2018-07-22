@@ -6,14 +6,28 @@
 
   button.addEventListener('click', function() {
     let text = document.getElementById('catName').value;
+    let catPic = document.getElementById('catPic');
     document.querySelector(".yourCat").textContent = text;
-    console.log('clicked');
   }, false);
 
 
 /* Create event listener to increment numbers after every click on the cat */
 
+let catPic = document.querySelector('#catPic');
+let petNumber = 0;
 
+catPic.addEventListener('click', function() {
+  petNumber++;
+  document.querySelector(".petNumber").textContent = petNumber;
+});
+
+let teeter = document.querySelector('#teeter');
+let teeterPets = 0;
+
+teeter.addEventListener('click', function() {
+  teeterPets++;
+  document.querySelector('.teeterPets').textContent = teeterPets;
+});
 
 /* After 10 clicks, kitten grows, replace image */
 

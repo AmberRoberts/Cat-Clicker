@@ -1,17 +1,17 @@
 body {
   font-family: sans-serif;
+  text-align: center;
 }
 
-header {
+h2 {
+  font-size: 1.2em;
+}
+
+.title {
   font-size: 3em;
   font-weight: bold;
-  font-family: cursive;
+  font-family: fantasy;
 }
-.intro {
-  max-width: 30%;
-  text-align: justify;
-}
-
 
 input[type=text] {
   width: 250px;
@@ -20,4 +20,27 @@ input[type=text] {
   border-radius: 4px;
   padding: 12px 20px 12px 40px;
   font-size: 16px;
+}
+
+#wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 800px;
+  margin: auto;
+}
+
+#bio {
+  width: 70%;
+  padding: 10px;
+  margin: auto;
+}
+
+#kitty, #myCat {
+  display: inline-block;
+  width: 800px;
+}
+
+#teeter, #catPic {
+  border-style: ridge;
+  border-radius: 4px;
 }
